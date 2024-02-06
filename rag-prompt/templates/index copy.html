@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background: url('/static/capture.png') no-repeat center center fixed;
+            background-size: contain;
+            background-position: center;
+        }
+        #chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 48px;
+            width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #chat-body {
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: #000000;
+        }
+
+        #input-container {
+            padding: 10px;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #user-input {
+            width: 70%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        #send-btn {
+            padding: 8px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #chat-history {
+            margin-top: 20px;
+        }
+
+        #chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 3px;
+            width: 50px;
+            height: 50px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #chat-container.closed {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat-container" class="closed">
+        <div id="chat-header">Confluence-chat</div>
+        <div id="chat-body"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type your query...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    
+    <div id="chat-icon" onclick="toggleChatContainer()">
+        <strong>Chat</strong>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chatContainer = document.getElementById('chat-container');
+            const chatBody = document.getElementById('chat-body');
+            const userInput = document.getElementById('user-input');
+            const sendBtn = document.getElementById('send-btn');
+            const chatHistory = document.getElementById('chat-history');
+    
+            function toggleChatContainer() {
+                chatContainer.classList.toggle('closed');
+            }
+    
+            sendBtn.addEventListener('click', function () {
+                const queryText = userInput.value;
+                if (queryText.trim() !== '') {
+                    // AJAX request to Flask server to get response
+                    fetch('/query', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: `query_text=${encodeURIComponent(queryText)}`,
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        const { query_text, response_text, sources } = data;
+    
+                        // Apply different styles based on the type of textdir
+                        const queryEntry = `<div style="background-color: #2E2EFF; color: white; border-radius: 5px; padding: 5px; margin-bottom: 5px;"><strong>User:</strong> ${query_text}</div>`;
+                        const responseEntry = `<div style="background-color: #F6F6F6; color: #000000; border-radius: 5px; padding: 5px; margin-bottom: 5px;"><strong>Bot:</strong> ${response_text}</div>`;
+    
+                        chatBody.innerHTML += queryEntry + responseEntry;
+    
+                        // Update chat history
+                        const chatHistoryEntry = `${query_text} - ${response_text}`;
+                        chatHistory.innerHTML += `<li>${chatHistoryEntry}</li>`;
+                        userInput.value = '';
+                    })
+                    .catch(error => console.error('Error:', error));
+                }
+            });
+        });
+    
+        // Add this part to associate the toggleChatContainer function with the chat-icon click event
+        function toggleChatContainer() {
+            const chatContainer = document.getElementById('chat-container');
+            chatContainer.classList.toggle('closed');
+        }
+    </script>
+    </body>
+    </html>

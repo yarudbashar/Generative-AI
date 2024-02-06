@@ -1,0 +1,3 @@
+Item ID: 12910602
+Title: Agreeya
+AgreeYa Solutions is a global systems integrator committed to delivering leading-edge, technology-enabled, and business-driven solutions to Fortune 100, medium and small organizations. It is our deep technology expertise, collaborative approach, and agile methodology that has made us the preferred partner for many global enterprises. AgreeYa is a team of 2,200+ AgreeYans who are driven by the idea of building innovative and game-changing solutions that can help organizations meet their most ambitious technology goals. We are headquartered in Folsom CA, with offices across the globe.

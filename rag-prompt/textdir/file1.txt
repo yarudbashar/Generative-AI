@@ -1,0 +1,38 @@
+The Chandrayaan-3’s Propulsion Module (PM) has been moved from Lunar orbit to Earth’s orbit.
+
+ISRO said on Monday that in another unique experiment, like the hop experiment on the Vikram Lander, the PM of Chandrayaan-3 was moved from an orbit around the Moon to an orbit around Earth.
+
+“With regard to the PM, the main objective was to ferry the Lander module from GTO to the final lunar polar circular orbit and separate the Lander. Subsequent to separation, Spectro-polarimetry of HAbitable Planet Earth (SHAPE) payload in the PM was also operated. The initial plan was to operate this payload for about three months during the mission life of PM,” ISRO said in an update.
+
+“The precise orbit injection by LVM3 and optimal earth / lunar burn maneuvers, resulted in the availability of over 100 kg of fuel in the PM after over one month of operations in the lunar orbit. It was decided to use the available fuel in the PM to derive additional information for future lunar missions and demonstrate the mission operation strategies for a sample return mission,” the space agency added.
+ISRO said that in order to continue SHAPE payload for Earth observation, it was decided to re-orbit the PM to a suitable Earth orbit.
+
+“This mission plan was worked out considering the collision avoidance such as preventing the PM from crashing on to the Moon’s surface or entering into the Earth’s GEO belt at 36000 km and orbits below that. Considering the estimated fuel availability and the safety to GEO spacecrafts, the optimal Earth return trajectory was designed for October 2023 month,” ISRO said.
+
+Updating on the PM, ISRO said that the first maneuver was performed on October 9, 2023 to raise apolune altitude to 5112 km from 150 km thus, increasing the period of orbit from 2.1 hrs to 7.2 hrs. Later, considering the estimate of available propellant, the second maneuver plan was revised to target an Earth orbit of 1.8 lakhs x 3.8 lakhs km.
+
+The Trans-Earth Injection (TEI) maneuver was performed on October 13, 2023. In the post-TEI maneuver realized orbit, propulsion module made four Moon fly-bys before departing Moon SOI on November 10. Currently, propulsion module is orbiting Earth and crossedits first perigee on November 22nd with an altitude of 1.54 lakhs km. The orbit period is nearly 13 days with 27 deg inclination. The perigee and apogee altitude vary during its trajectory and the predicted minimum perigee altitude is 1.15 lakhs km. Hence as per current orbit prediction, there is no threats of close approach with any operational Earth orbiting satellites.
+
+“As per plan, SHAPE payload is being operated whenever Earth is in its field of view. Also, a special operation of the SHAPE payload was carried out on October 28, 2023 during a Solar Eclipse.The Shape payload operations will continue further,” ISRO said.
+
+The space agency added that the UR Rao Satellite Centre/ISRO’s flight dynamics team has developed an analysis tool from first principles for this operation which is being validated through the return maneuvers carried out for the Chandrayaan-3 PM.
+
+It can be recalled that the primary objective of Chandrayaan-3 mission was to demonstrate soft landing near the lunar south polar region and perform experiments using the instruments on Vikram and Pragyaan.
+
+The spacecraft was launched on July 14, 2023 on-board LVM3-M4 vehicle from SDSC, SHAR. On August 23rd Vikram Lander made its historic touchdown on Moon and subsequently Pragyan rover was deployed. The scientific instruments in Lander and Rover were operated continuously for 1 lunar day as per the defined mission life. The mission objectives of Chandrayaan-3 have been completely met, said ISRO. 
+
+The Chandrayaan-3 consists of an indigenous Lander module (LM), Propulsion module (PM) and a Rover with an objective of developing and demonstrating new technologies required for Inter planetary missions. The Lander will have the capability to soft land at a specified lunar site and deploy the Rover which will carry out in-situ chemical analysis of the lunar surface during the course of its mobility. The Lander and the Rover have scientific payloads to carry out experiments on the lunar surface. The main function of PM is to carry the LM from launch vehicle injection till final lunar 100 km circular polar orbit and separate the LM from PM. Apart from this, the Propulsion Module also has one scientific payload as a value addition which will be operated post separation of Lander Module. 
+
+ISRO added added that the following are the main outcome from the return maneuvers carried out on PM related to future missions:
+
+*Planning and execution of trajectory and maneuvers to return from Moon to Earth.
+
+*Development of a software module to plan such a maneuver and its preliminary validation.
+
+*Planning and execution of a gravity assisted flyby across a planets/ celestial body.
+
+*Avoiding uncontrolled crashing of the PM on the Moon’s surface at the end of life of PM thus meeting the requirements of no debris creation.
+
+The Chandrayaan-3’s Propulsion Module (PM) has been moved from Lunar orbit to Earth’s orbit. ISRO said that in another unique experiment, like the hop experiment on the Vikram Lander, the PM of Chandrayaan-3 was moved from an orbit around the Moon to an orbit around Earth.
+ISRO said that in order to continue SHAPE payload for Earth observation, it was decided to re-orbit the PM to a suitable Earth orbit.
+Updating on the PM, ISRO said that the first maneuver was performed on October 9, 2023 to raise apolune altitude to 5112 km from 150 km thus, increasing the period of orbit from 2.1 hrs to 7.2 hrs. 
