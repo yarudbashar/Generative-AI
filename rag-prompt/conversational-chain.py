@@ -10,16 +10,11 @@ from langchain.chains.conversation.memory import ConversationBufferMemory
 from flask_cors import CORS
 from langchain_openai import OpenAI
 import tiktoken
-# import os
-# os.environ["OPENAI_API_KEY"] = "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"
 from utils import *
 set_open_key()
 
 from langchain_experimental.agents import create_csv_agent
 
-
-# import os
-# os.environ["OPENAI_API_KEY"] = "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"
 # encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 import asyncio
 
